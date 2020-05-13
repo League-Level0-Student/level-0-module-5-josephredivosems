@@ -36,7 +36,12 @@ public class Snowflake {
 			bob.turn(60);
 			
 			// #12. set the pen color to blue for even numbers of i
-			if(i % 2 == 0)
+			if(i % 2 == 0) {
+				bob.setPenColor(Color.blue);
+			}
+			else {
+				bob.setPenColor(Color.red);
+			}
 			
 			// #13. set the pen color to red for all odd numbers of i
 			
@@ -54,7 +59,7 @@ public class Snowflake {
 				
 			}
 			// #14. set the pen color to black
-				
+				bob.setPenColor(Color.black);
 		}
 	}
 
