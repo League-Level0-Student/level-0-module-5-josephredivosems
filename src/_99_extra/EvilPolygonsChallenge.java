@@ -10,13 +10,16 @@ public class EvilPolygonsChallenge {
 	public static void main(String[] args) {
 		
 		//1. Create a new Robot
-
+		Robot rob = new Robot("mini");
 		//2. Set the speed to 100
-
-		int colorChoice=JOptionPane.showOptionDialog(null, "hello", "title", JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new String[]{"Color 1","Color 2", "Color 3"}, 0);
+		rob.setSpeed(100);
+		int colorChoice=JOptionPane.showOptionDialog(null, "Choose a Color", "Color Choice", JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new String[]{"Red","Blue", "Yellow"}, 0);
 		
 		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
-		
+		if(colorChoice == 0) {
+			rob.setPenColor(Color.RED);
+		}
+		else if
 		//4. Ask the use how many polygons they want to be drawn.
 		
 		//5. Use the robot to draw the number of polygons the user requested.

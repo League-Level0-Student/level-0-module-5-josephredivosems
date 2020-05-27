@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	skills.skill2();
 	skills.skill3();
 	skills.skill4();
-	//skills.skill5();
+	skills.skill5();
 }
 void skill1() {
 	String dimes = JOptionPane.showInputDialog("How many dimes do you have");
@@ -49,7 +49,27 @@ void skill3() {
 void skill4() {
 	String city = JOptionPane.showInputDialog("What city do you live in?");
 	if(city.equals("San Diego")) {
+		JOptionPane.showMessageDialog(null, "You live in America's finest city.");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, "Move to San Diego");
 		
 	}
+	String cars = "2";
+	int Cars = Integer.parseInt(cars);
+    if(Cars == 0) {
+    	JOptionPane.showMessageDialog(null, "I bet you use public transportation");
+    }
+    else if (Cars == 1) {
+    	JOptionPane.showMessageDialog(null, "The model of the car is a 2017 Lexus RX 350");
+    }
+    else {
+    	JOptionPane.showMessageDialog(null, "Between all of my cars there are 8 wheels.");
+    }
+	
+}
+void skill5() {
+	String school = JOptionPane.showInputDialog("What is the name of your school");
+	JOptionPane.showMessageDialog(null, school + " is a fantastic school.");
 }
 }
