@@ -11,19 +11,23 @@ public class ReturnTypesAdvanced {
 	
 	public static void main(String[] args) {
 		//1. Ask the user how many sides they want their shape to be
-		
+		String sides = JOptionPane.showInputDialog("How many sides do you want your shape to be?");
 		//2. Call canMakeShape() and save what is returned into a variable
-		
+		int side = Integer.parseInt(sides);
+		boolean shape = canMakeShape(side);
 		//3. If the shape CAN be drawn
-		
+		if(shape) { 
 			//4. Call and save what is returned from calculateTurningAngle()
-		
+		int turn = calculateTurnAngle(side);
 			//5. Use drawPolygon() to draw your shape
-		
+		drawPolygon(side, turn);
 		//6. If the shape CANNOT be drawn 
-			
+		}
+		else {
 			//7. Call notEnoughSides() and print out what is returned 
-	
+		String not =notEnoughSides();
+		System.out.println(not);
+		}
 	}
 	
 	static int calculateTurnAngle(int numSides) {
